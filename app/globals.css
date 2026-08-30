@@ -172,6 +172,10 @@ button {
   font-weight: 900;
 }
 
+.keep-together {
+  white-space: nowrap;
+}
+
 .hero h1 em {
   color: var(--red);
   font-style: normal;

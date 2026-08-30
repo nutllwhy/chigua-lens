@@ -100,7 +100,7 @@ export default function Home() {
             <span>2026</span>
           </div>
           <h1>
-            别刷 200 条微博，
+            别刷 200 条<span className="keep-together">微博</span>，
             <br />
             <em>30 秒吃完一个瓜。</em>
           </h1>
