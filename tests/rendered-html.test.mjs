@@ -5,26 +5,35 @@ import test from "node:test";
 async function render() {
   const workerUrl = new URL("../dist/server/index.js", import.meta.url);
   workerUrl.searchParams.set("test", `${process.pid}-${Date.now()}`);
-  const { default: worker } = await import(workerUrl.href);
+  const { default: server } = await import(workerUrl.href);
   const configuredBasePath = process.env.PAGES_BASE_PATH?.trim();
   const basePath = configuredBasePath
     ? `/${configuredBasePath.replace(/^\/+|\/+$/g, "")}`
     : "";
+  const request = new Request(`http://localhost${basePath}/`, {
+    headers: { accept: "text/html" },
+  });
 
-  return worker.fetch(
-    new Request(`http://localhost${basePath}/`, {
-      headers: { accept: "text/html" },
-    }),
-    {
-      ASSETS: {
-        fetch: async () => new Response("Not found", { status: 404 }),
+  if (typeof server === "function") {
+    return server(request);
+  }
+
+  if (typeof server?.fetch === "function") {
+    return server.fetch(
+      request,
+      {
+        ASSETS: {
+          fetch: async () => new Response("Not found", { status: 404 }),
+        },
       },
-    },
-    {
-      waitUntil() {},
-      passThroughOnException() {},
-    },
-  );
+      {
+        waitUntil() {},
+        passThroughOnException() {},
+      },
+    );
+  }
+
+  throw new TypeError("Unsupported vinext server entry");
 }
 
 async function readDossier() {

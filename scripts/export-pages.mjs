@@ -64,19 +64,31 @@ async function normalizeClientBasePath(basePath) {
 }
 
 async function renderHome(basePath) {
-  const server = await import(`${pathToFileURL(serverEntry).href}?pages-export=${Date.now()}`);
-  const response = await server.default.fetch(
-    new Request(`https://pages.local${basePath || ""}/`),
-    {
-      ASSETS: {
-        fetch: async () => new Response("Not found", { status: 404 }),
-      },
-    },
-    {
-      passThroughOnException() {},
-      waitUntil() {},
-    },
+  const builtModule = await import(
+    `${pathToFileURL(serverEntry).href}?pages-export=${Date.now()}`
   );
+  const server = builtModule.default;
+  const request = new Request(`https://pages.local${basePath || ""}/`);
+  let response;
+
+  if (typeof server === "function") {
+    response = await server(request);
+  } else if (typeof server?.fetch === "function") {
+    response = await server.fetch(
+      request,
+      {
+        ASSETS: {
+          fetch: async () => new Response("Not found", { status: 404 }),
+        },
+      },
+      {
+        passThroughOnException() {},
+        waitUntil() {},
+      },
+    );
+  } else {
+    throw new TypeError("Unsupported vinext server entry");
+  }
 
   if (!response.ok) {
     throw new Error(`Static render failed with HTTP ${response.status}`);
