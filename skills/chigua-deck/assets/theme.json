@@ -1,0 +1,17 @@
+{
+  "name": "Chigua Editorial",
+  "colors": {
+    "paper": "#F3EFE6",
+    "paperDeep": "#E7DFD1",
+    "ink": "#171712",
+    "muted": "#6D695F",
+    "red": "#EF4B35",
+    "blue": "#3459E6",
+    "lime": "#CDEB58",
+    "white": "#FFFDF8"
+  },
+  "slideSize": {
+    "width": 1280,
+    "height": 720
+  }
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "吃瓜神器"
+  short_description: "把微博热点整理成可追溯的 9 页吃瓜简报、证据台账和 PPT"
+  default_prompt: "使用 $chigua-deck 梳理这个热点，并生成一份带信源、时间线和不确定性标记的 9 页吃瓜简报 PPT。"

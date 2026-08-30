@@ -1,0 +1,77 @@
+{
+  "title": "侯明昊奇遇记哽咽",
+  "topic": "#侯明昊哽咽#",
+  "subtitle": "公开信息吃瓜简报",
+  "generatedAt": "2026-08-08 23:11 CST",
+  "demo": false,
+  "oneLiner": "两段现场视频把同一场活动的情绪瞬间推上热搜；具体触发原因未见本人明确说明。",
+  "slideTitles": {
+    "summary": "先说结论：哽咽有现场视频，原因没有本人说明",
+    "relations": "这次热搜来自同一场活动里的两段现场视频",
+    "timeline": "四小时后，“奇遇”直播被剪成了两个情绪瞬间",
+    "claims": "视频能确认现场表现，不能替本人解释内心原因",
+    "evidence": "把“被感动哭了”拆成四条可核对的信息",
+    "verdicts": "能确认的是现场，不能确认的是情绪触发点",
+    "next": "下一条真正有用的信息，是本人或官方的完整上下文",
+    "sources": "原帖、现场视频和热搜页各自证明不同的事"
+  },
+  "summaryNote": "热搜标题描述的是可观察表现；“礼物感动”“双向奔赴”“不舍”等原因，来自发布者和网友解读。",
+  "relationCenter": {
+    "title": "微博奇遇记",
+    "subtitle": "粉丝互动与现场演唱"
+  },
+  "nextConclusion": "在本人明确解释前，只确认现场出现哽咽，不给情绪补写唯一原因。",
+  "facts": [
+    {"label": "已确认", "text": "侯明昊本人发布“微博奇遇记”直播回放", "status": "confirmed", "sourceIds": ["s1"]},
+    {"label": "视频可核", "text": "现场回应提到希望大家开心、勇敢，并说未来还很长", "status": "confirmed", "sourceIds": ["s3"]}
+  ],
+  "unknowns": [
+    "哽咽的确切触发点",
+    "本人是否将情绪归因于礼物、留言或歌曲",
+    "两段网络视频是否覆盖完整上下文"
+  ],
+  "people": [
+    {"id": "p1", "name": "侯明昊", "role": "当事人、直播发布者"},
+    {"id": "p2", "name": "现场粉丝", "role": "互动与应援参与者"},
+    {"id": "p3", "name": "微博奇遇记", "role": "活动与直播场景"}
+  ],
+  "relations": [
+    {"from": "p1", "to": "event", "label": "发布活动直播"},
+    {"from": "p2", "to": "event", "label": "现场互动回应"},
+    {"from": "p3", "to": "p1", "label": "提供活动场景"}
+  ],
+  "timeline": [
+    {"time": "8月8日 17:06", "title": "本人发布直播", "detail": "侯明昊发布“这个夏天，我们的「奇遇」”直播回放。", "status": "confirmed", "sourceIds": ["s1"]},
+    {"time": "8月8日 21:17", "title": "回应片段开始传播", "detail": "现场用户视频聚焦他回应粉丝时的停顿与哽咽。", "status": "unverified", "sourceIds": ["s3"]},
+    {"time": "8月8日 21:22", "title": "演唱片段被发布", "detail": "另一条视频将《多远都要在一起》片段解读为演唱时破防。", "status": "unverified", "sourceIds": ["s4"]},
+    {"time": "8月8日 23:11", "title": "话题讨论集中出现", "detail": "搜索页聚合同主题讨论；因未留存当时快照，本简报不引用历史排名和精确热度数字。", "status": "unverified", "sourceIds": ["s2"]}
+  ],
+  "claims": {
+    "sideA": {"name": "原始发布与视频", "summary": "本人发布活动直播；现场回应提到希望粉丝开心、勇敢，未来还很长。", "sourceIds": ["s1", "s3"]},
+    "sideB": {"name": "现场帖与热搜标题", "summary": "发布者将停顿、红眼或声线变化解读为被感动、演唱破防或不舍。", "sourceIds": ["s3", "s4"]},
+    "commonGround": "这些内容都指向 8 月 8 日的微博奇遇记活动。"
+  },
+  "evidence": [
+    {"id": "e1", "title": "当事人直播原帖", "summary": "可确认活动、发布者和发布时间，但原帖没有解释哽咽原因。", "status": "confirmed", "sourceIds": ["s1"]},
+    {"id": "e2", "title": "现场回应视频", "summary": "视频可听到他希望大家开心、勇敢，并表示未来还很长。", "status": "confirmed", "sourceIds": ["s3"]},
+    {"id": "e3", "title": "演唱片段帖文", "summary": "视频帖存在，但“不舍”“破防”是发布者对表现的解读。", "status": "unverified", "sourceIds": ["s4"]},
+    {"id": "e4", "title": "动态话题搜索页", "summary": "可定位相关讨论，但没有留存历史快照，不能据此复原当时排名或精确热度。", "status": "unverified", "sourceIds": ["s2"]}
+  ],
+  "verdicts": {
+    "confirmed": ["本人发布微博奇遇记直播回放", "现场回应提到希望粉丝开心、勇敢"],
+    "conflicting": [],
+    "unverified": ["礼物或留言是唯一触发原因", "哽咽完全源于演唱时的不舍"],
+    "debunked": []
+  },
+  "nextWatch": [
+    "是否出现本人对哽咽原因的完整回应",
+    "活动官方是否发布完整现场视频",
+    "后续传播是否继续混用旧演唱会片段"
+  ],
+  "sources": [
+    {"id": "s1", "publisher": "侯明昊", "title": "这个夏天，我们的「奇遇」", "url": "https://weibo.com/1831550987/RcsjiFSbF", "publishedAt": "2026-08-08 17:06", "retrievedAt": "2026-08-08 23:11 CST", "type": "当事人原始发布"},
+    {"id": "s2", "publisher": "微博搜索", "title": "#侯明昊哽咽# 搜索结果", "url": "https://s.weibo.com/weibo?q=%23%E4%BE%AF%E6%98%8E%E6%98%8A%E5%93%BD%E5%92%BD%23", "publishedAt": "2026-08-08", "retrievedAt": "2026-08-08 23:11 CST", "type": "动态话题搜索页（未留存快照）"},
+    {"id": "s3", "publisher": "屁桃屁事多", "title": "微博奇遇记现场回应视频", "url": "https://weibo.com/7379843360/RctWQ8v5z", "publishedAt": "2026-08-08 21:17", "retrievedAt": "2026-08-08 23:11 CST", "type": "现场用户视频"},
+    {"id": "s4", "publisher": "幼儿园园一莎弥拉", "title": "《多远都要在一起》现场视频", "url": "https://weibo.com/2914396925/RctYTDFK5", "publishedAt": "2026-08-08 21:22", "retrievedAt": "2026-08-08 23:11 CST", "type": "现场用户视频"}
+  ]
+}

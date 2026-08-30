@@ -1,0 +1,182 @@
+{
+  "title": "南风音乐节阵容调整",
+  "topic": "#南风音乐节阵容调整#",
+  "subtitle": "公开信息吃瓜简报",
+  "generatedAt": "2026-08-08 14:30 CST",
+  "demo": true,
+  "collection": {
+    "method": "fictional-demo",
+    "coverageNote": "完全虚构的固定案例，不访问微博或外部网页。",
+    "weiboCli": {
+      "used": false,
+      "commands": []
+    }
+  },
+  "oneLiner": "嘉宾确认退出，但活动方与工作室对取消原因说法不一致。",
+  "facts": [
+    {
+      "label": "已确认",
+      "text": "林霁不再参加本周末演出",
+      "status": "confirmed",
+      "sourceIds": ["s1", "s2"]
+    },
+    {
+      "label": "有分歧",
+      "text": "双方对退出原因的公开表述不同",
+      "status": "conflicting",
+      "sourceIds": ["s1", "s2"]
+    },
+    {
+      "label": "最新",
+      "text": "主办方已经开放部分票种退款",
+      "status": "confirmed",
+      "sourceIds": ["s4"]
+    }
+  ],
+  "unknowns": [
+    "取消决定由谁最终作出",
+    "双方是否就演出条款产生争议",
+    "主办方是否会继续说明原因"
+  ],
+  "people": [
+    { "id": "p1", "name": "南风音乐节", "role": "活动主办方" },
+    { "id": "p2", "name": "林霁工作室", "role": "艺人工作室" },
+    { "id": "p3", "name": "购票观众", "role": "受阵容调整影响" }
+  ],
+  "relations": [
+    { "from": "p1", "to": "event", "label": "宣布阵容调整" },
+    { "from": "p2", "to": "event", "label": "回应取消原因" },
+    { "from": "p1", "to": "p3", "label": "开放退款" }
+  ],
+  "timeline": [
+    {
+      "time": "8月8日 08:42",
+      "title": "主办方官宣阵容调整",
+      "detail": "公告称艺人因行程冲突不再参加周末演出。",
+      "status": "confirmed",
+      "sourceIds": ["s1"]
+    },
+    {
+      "time": "8月8日 09:17",
+      "title": "工作室否认行程冲突",
+      "detail": "工作室称已预留档期，取消决定来自活动方。",
+      "status": "conflicting",
+      "sourceIds": ["s2"]
+    },
+    {
+      "time": "8月8日 10:05",
+      "title": "旧版演出海报被转发",
+      "detail": "两天前公开的场地图仍保留艺人名字。",
+      "status": "unverified",
+      "sourceIds": ["s3"]
+    },
+    {
+      "time": "8月8日 12:26",
+      "title": "主办方补充退款方案",
+      "detail": "新增单日票无条件退款通道，未再解释原因。",
+      "status": "confirmed",
+      "sourceIds": ["s4"]
+    }
+  ],
+  "claims": {
+    "sideA": {
+      "name": "活动方",
+      "summary": "本次阵容调整是因为艺人行程冲突。",
+      "mode": "paraphrase",
+      "sourceIds": ["s1"]
+    },
+    "sideB": {
+      "name": "工作室",
+      "summary": "演出档期已预留，取消决定来自活动方。",
+      "mode": "paraphrase",
+      "sourceIds": ["s2"]
+    },
+    "commonGround": "双方都确认林霁不会参加本场演出。"
+  },
+  "evidence": [
+    {
+      "id": "e1",
+      "title": "双方确认退出演出",
+      "summary": "退出已经确认，分歧集中在取消原因。",
+      "status": "confirmed",
+      "sourceIds": ["s1", "s2"]
+    },
+    {
+      "id": "e2",
+      "title": "两种原因互相冲突",
+      "summary": "现阶段没有第三方材料能够裁决。",
+      "status": "conflicting",
+      "sourceIds": ["s1", "s2"]
+    },
+    {
+      "id": "e3",
+      "title": "舞台时长谈判失败",
+      "summary": "只有匿名账号转述，没有合同或聊天记录。",
+      "status": "unverified",
+      "sourceIds": ["s3"]
+    },
+    {
+      "id": "e4",
+      "title": "部分票种可以退款",
+      "summary": "适用票种与截止时间已在补充公告中写明。",
+      "status": "confirmed",
+      "sourceIds": ["s4"]
+    }
+  ],
+  "verdicts": {
+    "confirmed": [
+      "林霁退出本周末演出",
+      "主办方已开放部分票种退款"
+    ],
+    "conflicting": [
+      "活动方与工作室对取消原因表述不同"
+    ],
+    "unverified": [
+      "取消与舞台时长谈判失败有关"
+    ],
+    "debunked": []
+  },
+  "nextWatch": [
+    "主办方是否进一步解释取消原因",
+    "工作室是否公布可核验材料",
+    "退款通道是否按公告执行"
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "阵容调整公告",
+      "publisher": "南风音乐节",
+      "url": "demo://organizer-announcement",
+      "publishedAt": "2026-08-08 08:42",
+      "retrievedAt": "2026-08-08 14:10",
+      "type": "虚构原始声明"
+    },
+    {
+      "id": "s2",
+      "title": "关于演出安排的说明",
+      "publisher": "林霁工作室",
+      "url": "demo://studio-response",
+      "publishedAt": "2026-08-08 09:17",
+      "retrievedAt": "2026-08-08 14:12",
+      "type": "虚构原始声明"
+    },
+    {
+      "id": "s3",
+      "title": "匿名账号转述与旧版海报",
+      "publisher": "公开微博样本",
+      "url": "demo://unverified-posts",
+      "publishedAt": "2026-08-08 10:05",
+      "retrievedAt": "2026-08-08 14:18",
+      "type": "虚构网友内容"
+    },
+    {
+      "id": "s4",
+      "title": "退款方案补充公告",
+      "publisher": "南风音乐节",
+      "url": "demo://refund-update",
+      "publishedAt": "2026-08-08 12:26",
+      "retrievedAt": "2026-08-08 14:20",
+      "type": "虚构原始声明"
+    }
+  ]
+}
